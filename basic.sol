@@ -45,4 +45,24 @@ contract Book {
 
 }
 
-// there are signed Interger called <u>int</u> while unsigned integer are called <u>unit</u>
+// there are signed Interger called <u>int</u> while unsigned integer are called unit
+// int could be both positive and negative, while uint could only be positive.
+//int could be negative, like -3
+int a = -3;
+
+//uint could only be positive
+uint b = 10; // this is ok
+uint c = 3 - 5; // this will report errors
+
+/* Why do we use unsigned integers?
+Well, this is because if we want to store the same positive number, uint could need smaller memory as it doesn’t need to store the symbol.
+Since we don’t need to store the symbol of the integer (- or +) then we could have more space to store the actual number.
+What are the common operations of integers?
++= and -=Two commonly used operations for updating an integer are += and -=a += b is the same as a = a + b we retrieve the value of a,
+add b to it, and assign the value back to a. */
+int a = 3;
+//this is the same as a = a + 3
+//We retrieve the value of a
+//add 3 to it
+//and assign it back to a 
+a += 3; //a is 6 now 
