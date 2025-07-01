@@ -14,3 +14,15 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors { }
 // Here it says we need version >=0.7.5, but <0.8.0
 pragma solidity ^0.7.5;
 
+ // a contract is a collection of code (functions) and data (state) that resides at a specific address on the Ethereum blockchain.
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.18;
+//the contract named "Book"
+contract Book{
+
+  //this is an empty contract
+	
+}
+
+/* Contracts in Solidity are similar to classes in object-oriented languages, with each contract containing declarations of state variables, functions, and more.In Solidity,
+a .sol file, which is the extension for Solidity source code files, could contain one or more contracts.*/
