@@ -14,6 +14,7 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors { }
 // Here it says we need version >=0.7.5, but <0.8.0
 pragma solidity ^0.7.5;
 
+//<h2>CONTRACT</h2>
  // a contract is a collection of code (functions) and data (state) that resides at a specific address on the Ethereum blockchain.
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.18;
@@ -26,3 +27,20 @@ contract Book{
 
 /* Contracts in Solidity are similar to classes in object-oriented languages, with each contract containing declarations of state variables, functions, and more.In Solidity,
 a .sol file, which is the extension for Solidity source code files, could contain one or more contracts.*/
+
+//<h2>VARIABLES</h2>
+//Variables are like containers that store information within a program (a smart contract here).
+//In Solidity, variables are used to store and manage data within smart contracts.
+/*What properties does a variable have?
+Every variable has a type, as a shoe container could only hold shoes, you cannot assign a true or false value to an int type variable, which should hold integers.Overall, a variable also has：
+● Variable name: this is the name we give to a container: a
+● Variable value: is the actual information we put inside the container: 10
+● Variable type: every variable has a type, for example: integer. */
+
+pragma solidity ^0.8.7;
+contract Book {
+
+  //This is a variable of type integer 
+  int basic_price = 10;
+
+}
