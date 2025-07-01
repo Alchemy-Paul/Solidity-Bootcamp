@@ -45,7 +45,7 @@ contract Book {
 
 }
 
-// there are signed Interger called <u>int</u> while unsigned integer are called unit
+// there are signed Interger called int while unsigned integer are called uint
 // int could be both positive and negative, while uint could only be positive.
 //int could be negative, like -3
 int a = -3;
