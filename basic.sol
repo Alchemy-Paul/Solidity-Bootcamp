@@ -44,3 +44,5 @@ contract Book {
   int basic_price = 10;
 
 }
+
+// there are signed Interger called <u>int</u> while unsigned integer are called <u>unit</u>
