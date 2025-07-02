@@ -1,4 +1,4 @@
-Day 01
+// Day 01
 
 // Here we use the keywords pragma solidity to specify the version of the Solidity compiler to be used to compile the code.
 
@@ -69,6 +69,6 @@ int a = 3;
 //and assign it back to a 
 a += 3; //a is 6 now 
 
-Day 02
+// Day 02
 
 
