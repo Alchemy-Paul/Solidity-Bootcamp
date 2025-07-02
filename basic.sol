@@ -130,5 +130,22 @@ contract Book{
 
 // Address
 // An address is an identifier for an account or a smart contract on the Ethereum blockchain.It’s a number in hexadecimal.
+// An address could be one of these two things: account address or contract address.Account addressIt’s created to receive or send money by a user, a.k.a. a user-controlled address. 
+
+/* This is also referred to as a wallet. Check out Metamask if you’re not familiar with this concept.
+Contract addressIn contrast with account address, contract address is controlled by a contract (program). 
+When you put your contract on Ethereum, you put it to an address on Ethereum. And this identifier is how people interact with you.*/
+
 //0x means the following number is in hexadecimal 
 address address1 = 0x35701d003AF0e05D539c6c71bF9421728426b8A0;
+//In the ERC20 transfer function, the address data type is used to represent recipient addresses.
+function transfer(address to, uint256 value) public virtual returns (bool) {
+    address owner = _msgSender();
+    _transfer(owner, to, value);
+    return true;
+}
+// Also when you register your wallet, you’re assigned a unique account address.
+
+// An address could be one of these two things: account address or contract address.Account addressIt’s created to receive or send money by a user, a.k.a. a user-controlled address. 
+This is also referred to as a wallet. Check out Metamask if you’re not familiar with this concept. Contract addressIn contrast with account address, contract address is controlled by a contract (program). 
+When you put your contract on Ethereum, you put it to an address on Ethereum. And this identifier is how people interact with you.
