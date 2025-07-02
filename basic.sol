@@ -71,4 +71,64 @@ a += 3; //a is 6 now
 
 // Day 02
 
+// A bit is a unit. It represents a single digit in binary representation: 0 or 1. And uint can specify how many bits it stores, like this: uint128.
+/* In UniswapV2, developers split uint224 into uint112 x uint112 to achieve decimal representation in Solidity.
+The first 112 bits are used to represent the integer part, while the subsequent 112 bits are used for the decimal part. */
 
+uint224 constant Q112 = 2**112;
+uint8 a;
+int256 b;
+int128 c;
+uint127 d; //This is NOT valid because 127 is not a multiplier of 8.
+
+/* You can’t use bit in Solidity directly, as it’s used to specify the number of bits an integer could use.
+We add bits after uint or int.However, it’s worth noting that the number of bits needs to be a multiplier of 8 
+uint and int
+uint and int are the acronym of uint256 and int256, which are the biggest integers we could have.
+
+*/
+uint a;//this is the same as uint256 a;
+int b;
+
+//Boolean
+/* Boolean otherwise known as bool is a type of variable whose value could only either be true or false.
+What are the operations on booleans?
+// ● Negation
+We have some operations on bool. Just like you could do plus and minus for numbers; for bool, we could do negation ! - which flips the value from 0 to 1 and from 1 to 0. */
+bool c = !a; // c is false here, we flipped the value of a and assigned it to c
+bool d = !c; // d is true here  
+// ● And
+// && will return a value of true if both variables are true
+bool e = d && a;// e will be true because both d and a are true 
+bool f = e && b;// f will not be true because b is not true
+bool g = e && true; // g will be true 
+// ● Or
+// Since we have the && operation, then we have or || too, which will return true if at least one of the two variables is true.
+bool h = true || false; // h is true
+// ● Equality
+// Another operation that will be used commonly is == which will return true if two values are the same, false otherwise.
+bool i = a == true; // i is true because a is true 
+// ● Inequality
+//Finally, we also need inequality != which returns true if two values are not the same, false otherwise.
+bool j = a != true; // j is false because a is true
+
+// example
+pragma solidity ^0.8.7;
+contract Book{
+
+	bool a = true;
+	bool b = false;
+	bool c = !a; 
+	bool d = !c;
+	bool e = d && a;
+	bool f = e && b;
+	bool g = e && true;
+	bool h = true || false;
+	bool i = a == true;
+	bool j = a != true;
+}
+
+// Address
+// An address is an identifier for an account or a smart contract on the Ethereum blockchain.It’s a number in hexadecimal.
+//0x means the following number is in hexadecimal 
+address address1 = 0x35701d003AF0e05D539c6c71bF9421728426b8A0;
