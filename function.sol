@@ -17,7 +17,9 @@ contract Function {
   //and outputs another int.
   //public is indicating that everyone could access this function
   //we will discuss more about public in lesson Scope
-  function add(int a, int b) public returns(int){
+  function add(int a, int b) pure  public returns(int){
     return a + b;
   }
 }
+
+// had some errors so i had to add pure 
